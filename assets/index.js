@@ -10,7 +10,7 @@ const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'header',
+            name: 'title',
             message: 'Name of your project?',
         },
         {
@@ -24,16 +24,37 @@ const promptUser = () => {
             message: 'Write a breif description of your project',
         },
         {
-            type: 'input',
-            name: 'use',
-            message: 'What is the purpose of this application',
-        },
-        {
             type:'input',
             name: 'install',
             message: 'How do you install the generator',
             default: 'npm i'
-        }
+        },
+        {
+            type: 'input',
+            name: 'use',
+            message: 'What is the purpose of this application?',
+        },
+        {
+            type: 'input',
+            name: 'contribute',
+            message: 'Rules on how someone should contribute',
+            default: 'https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.txt'
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'How to test the application?',
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your github username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email?',
+        },
     ])
 }
 
