@@ -3,3 +3,12 @@
 
 # Ada Library Information
 *.ali
+# Mac Sysyem File
+.DS_Store
+
+#App Config Files
+.env
+appp.config
+
+# Modules
+node_modules/
