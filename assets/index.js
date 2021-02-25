@@ -16,7 +16,7 @@ const promptUser = () => {
         {
             type: 'list',
             name:'license',
-            choices: ['MIT','GPL','ANNA','N/A']
+            choices: ['MIT','GNU GPLv3','Apache 2.0','ISC','N/A']
         },
         {
             type: 'input',
@@ -25,7 +25,7 @@ const promptUser = () => {
         },
         {
             type:'input',
-            name: 'install',
+            name: 'installation',
             message: 'How do you install the generator',
             default: 'npm i'
         },

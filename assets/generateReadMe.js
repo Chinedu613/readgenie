@@ -4,12 +4,15 @@ const generateReadMe = (answers) => {
     ${generateLicense(answers.license)}
 
 # ${answers.title}
+## Table of Contents
+
+${generateTOC(answers)}
 
 ## DESCRIPTION
 
 ${answers.description}
 
-${installation(answers.install)}
+${installation(answers.installation)}
 ${readMeUsage(answers.use)}
 
 ## LICENSE
@@ -18,7 +21,7 @@ ${generateLicense(answers.license)}
 This application is using the ${answers.license} license
 ${readMeTest(answers.test)}
 
-## Contributing
+## Contribute
 ${contributeGenie(answers.contribute)}
 
 ## Questions
@@ -38,15 +41,15 @@ if(license !== "N/A")
 }
 
 // Function to Plug in Install Section if not blank
-const installation = (install) =>  {
-    if(install !== ""){
+const installation = (installation) =>  {
+    if(installation !== ""){
     return `
 ## INSTALLATION
 
-${install}`
+${installation}`
 }else{
 return`
-${install = ""}`
+${installation = ""}`
 }
 }
 // Function to Plug in Contributing Section if not blank
@@ -67,10 +70,8 @@ const readMeTest = (test) => {
 ## Tests
 
 ${test}`
-} else {
-    return `
-${test = ""}`
-    }
+} else return `
+${test}`
 }
 // Function to Plug in Usage Section if not blank
 const readMeUsage = (use) => {
@@ -78,12 +79,26 @@ const readMeUsage = (use) => {
 return `
 ## USAGE
 
-${use}`}
-else{
-return `
-${use = ""}`
+${use}` 
+} else return `
+${use}`
 }
+const generateTOC = (answers) => {
+    const entries = Object.entries(answers);
+    let toc = "";
+    for (let [key, value] of entries){
+        if  (value !== ""){
+            toc += `[${key}](#${key})\n`
+        }
+    }
+    return toc
+    /* let toc = ""
+    //if (// if answers is empty) return str;
+    for ( let key in answers) {
+        toc += `[${key}](#${key})\n`
+    }
+console.log(toc)
+return toc */
 }
-
 
 module.exports = generateReadMe
