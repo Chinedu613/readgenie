@@ -14,25 +14,25 @@ const promptUser = () => {
             message: 'Name of your project?',
         },
         {
+            type: 'input',
+            name:'description',
+            message: 'Write a brief description of your project',
+        },
+        {
             type: 'list',
             name:'license',
             choices: ['MIT','GNU GPLv3','Apache 2.0','ISC','N/A']
         },
         {
-            type: 'input',
-            name:'description',
-            message: 'Write a breif description of your project',
-        },
-        {
             type:'input',
             name: 'installation',
-            message: 'How do you install the generator',
-            default: 'npm i'
+            message: 'How do you install the generator?',
+            default: 'npm install inquirer'
         },
         {
             type: 'input',
-            name: 'use',
-            message: 'What is the purpose of this application?',
+            name: 'usage',
+            message: 'How do you use this CLI application?',
         },
         {
             type: 'input',
