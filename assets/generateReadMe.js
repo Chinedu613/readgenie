@@ -80,7 +80,7 @@ const readMeTesting = (test) => {
     if (test !== "") {
         return `
 
-## Tests
+## Test
 
 ${test}`;
     } else
@@ -108,7 +108,7 @@ const generateTOC = (answers) => {
     const entries = Object.entries(answers);
     let toc = "";
     for (let [key, value] of entries){
-        if  (value !== "" && key !== "title"){
+        if  (value !== "" && key !== "title" && key !== "github" && key !==  "email"){
             toc += `[${key.toUpperCase()}](#${key})\n\n`
         }
     }

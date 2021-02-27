@@ -1,7 +1,7 @@
 
-# CLI: Readme Generator
+# Sample Readme.md
 
-![badge](https://img.shields.io/badge/license-MIT-blue.svg)
+![badge](https://img.shields.io/badge/license-GNU%20GPLv3-blue.svg)
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
 ## DESCRIPTION
 
-This application is to make it a lot bit easier to write & format a Readme file for users code; while using Node.js. Using Javascript to issue prompts through CLI
+Wrting a sample description to show how the app works
 
 
 ## INSTALLATION
@@ -33,18 +33,18 @@ npm install inquirer
 
 ## USAGE
 
-To use this application you will need it use intialize & install inquirer then run node index.js to start running the prompts to fill out your Readme file 
+You will need to install inquirer to make the prompts work
 
 ## LICENSE
 
-![badge](https://img.shields.io/badge/license-MIT-blue.svg)
+![badge](https://img.shields.io/badge/license-GNU%20GPLv3-blue.svg)
 
-This application is using the MIT license
+This application is using the GNU GPLv3 license
 
 
 ## Tests
 
-Currently there are no test for this application
+Right now there are no test for this application
 
 ## Contribute
 
