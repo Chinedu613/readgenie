@@ -1,4 +1,5 @@
 
+
 # CLI: Readme Generator
 
 ![badge](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -33,7 +34,7 @@ npm install inquirer
 
 ## USAGE
 
-To use this application you will need it use intialize & install inquirer then run node index.js to start running the prompts to fill out your Readme file 
+To use this application you will need it use intialize & install inquirer then run node index.js to start running the prompts to fill out your Readme file [link to youtube video showing how to use app](https://youtu.be/9c4jcWAVwQA)
 
 ## LICENSE
 
